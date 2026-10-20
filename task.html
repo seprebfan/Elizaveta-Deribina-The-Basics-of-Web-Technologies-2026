@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача</title>
+     <style>
+          a:hover {
+            background-color: rgb(183, 176, 129);
+        }
+
+        a.active {
+         background-color: rgb(215, 159, 87);
+}
+    </style>
+</head>
+<body>
+<h1>Задача</h1>
+  <ul>
+       <li> <a href="index.html">Главная</a> </li>
+       <li> <a href="info1.html">Текст с навигацией</a> </li>
+       <li> <a href="images.html">Фото</a>  </li>
+       <li> <a href="table.html">Таблица</a>  </li>
+       <li> <a href="forms.html">Формы</a> </li>
+       <li> <a href="passport.html">Паспорт</a>  </li> 
+       <li> <a href="task.html">Задача</a>  </li>
+       <li> <a href="https://telsociety.co.uk" target="_blank">T. E. Lawrence Society</a> </li>
+       <li> <a href="https://archive.org/details/in.ernet.dli.2015.462697/page/n3/mode/1up" target="_blank"><img src="image/SPW.jpeg" width= "20px" /></a> </li>
+    </ul>
+
+    <h1>Решение алгоритмической задачи</h1>
+    
+    <p><b>Формулировка задачи:</b></p>
+    <p>Даны вещественные числа: A, B, C. Определить, выполняются ли неравенства A &lt; B &lt; C или A &lt; B &gt; C и какое именно неравенство выполняется.</p>
+
+    <hr>
+    <p>
+        <label>A: <input type="number" id="valA" step="any"></label><br><br>
+        <label>B: <input type="number" id="valB" step="any"></label><br><br>
+        <label>C: <input type="number" id="valC" step="any"></label><br><br>
+    </p>
+
+    <button onclick="solveTask()">Решить задачу</button>
+
+    <hr>
+
+    <p><b>Результат решения задачи:</b></p>
+    <div id="result" style="font-weight: bold;"></div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
