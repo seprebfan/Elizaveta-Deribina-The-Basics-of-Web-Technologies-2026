@@ -11,6 +11,21 @@
         a.active {
          background-color: rgb(215, 159, 87);
 }
+            .list-disc { list-style-type: disc; } 
+        .list-square { list-style-type: square; } 
+        
+        .list-roman { list-style-type: upper-roman; } 
+        .list-arabic-start { list-style-type: decimal; padding-left: 20px; }
+        .list-arabic-start li:nth-child(1) { counter-reset: item 2; }
+        .bottom-line {
+            width: 45%;
+            height: 20px;
+            margin: 0 auto;
+            border: none;
+            background-color: #555; 
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
@@ -86,6 +101,8 @@
     </ul>
     <a id="down"></a>
     <p><a href="#top">Перейти к началу</a></p>
+
+     <hr class="bottom-line">
 
 </body>
 </html>
