@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+    <style>
+        a:hover { background-color: rgb(183, 176, 129); }
+        a.active { background-color: rgb(215, 159, 87); }
+        form { margin-bottom: 40px; padding: 15px; border: 1px solid #ccc; width: 500px;}
+        label { display: block; margin-top: 10px; }
+        input[type="text"], input[type="number"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"] {
+            width: 100%; padding: 5px; margin-top: 5px;
+        }
+        input[type="submit"], input[type="reset"] { margin-top: 15px; padding: 10px 20px; cursor: pointer;}
+    </style>
+</head>
+<body>
+<h1> Формы </h1>
+  <ul>
+       <li> <a href="index.html">Главная</a> </li>
+       <li> <a href="info1.html">Текст с навигацией</a> </li>
+       <li> <a href="images.html">Фото</a>  </li>
+       <li> <a href="table.html">Таблица</a>  </li>
+       <li> <a href="forms.html">Формы</a> </li>
+       <li> <a href="passport.html">Паспорт</a>  </li> 
+       <li> <a href="task.html">Задача</a>  </li>
+       <li> <a href="DOM.html"> Считывание из DOM</a> </li>
+       <li> <a href="https://telsociety.co.uk" target="_blank">T. E. Lawrence Society</a> </li>
+       <li> <a href="https://archive.org/details/in.ernet.dli.2015.462697/page/n3/mode/1up" target="_blank"><img src="image/SPW.jpeg" width= "20px" /></a> </li>
+    </ul>
+
+    <hr>
+    <h1>Формы</h1>
+    <h2>1. Контактные данные</h2>
+   
+    <form action="https://formspree.io/f/mnpjkpkz" method="POST" target="_blank">
+        
+        <label>Фамилия: <input type="text" name="last_name" required></label>
+        <label>Имя: <input type="text" name="first_name" required></label>
+        
+        <label>Группа: <input type="text" name="student_group" required></label>
+        <label>Мобильный телефон: <input type="tel" name="phone" required></label>
+        <label>Электронная почта: <input type="email" name="email" required></label>
+        
+        <label>Дата отправки: <input type="date" name="send_date" required></label>
+        
+        <br>
+        <input type="submit" value="Отправить контакты">
+        <input type="reset" value="Очистить">
+    </form>
+
+    <hr>
+
+    <h2>2. Заказ книги и отзыв</h2>
+    <form action="https://formspree.io/f/mnpjkpkz" method="POST" target="_blank">
+        
+        <label>Ваше имя (для заказа): <input type="text" name="customer_name" required></label>
+        
+        <label>Количество экземпляров: <input type="number" name="book_count" min="1" max="10" value="1" required></label>
+        
+        <label>Формат книги:</label>
+        <label><input type="radio" name="book_format" value="paper" checked> Бумажная</label>
+        <label><input type="radio" name="book_format" value="electronic"> Электронная</label>
+
+        <label>Дополнительно:</label>
+        <label><input type="checkbox" name="add_audiobook" value="yes"> Добавить аудиоверсию</label>
+        <label><input type="checkbox" name="add_postcard" value="yes"> Открытка в подарок</label>
+
+        <label>Желаемая дата доставки: <input type="date" name="delivery_date"></label>
+        
+        <label>Пароль для личного кабинета (если нужно): <input type="password" name="user_password"></label>
+        
+        <input type="hidden" name="order_source" value="website_lawrence">
+        
+    
+        <label>Ваш отзыв: <input type="text" name="feedback" value="Только пожалуйста не присылайте Семь столпов мудрости!"></label>
+
+        <br>
+        <input type="submit" value="Оформить заказ">
+        <input type="reset" value="Очистить">
+    </form>
+
+</body>
+</html>
